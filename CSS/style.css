@@ -324,16 +324,26 @@ li {
   width: 1280px;
   height: 720px;
   margin-top: 20px;
-  
+  background: #272827;
 }
 .imagebackground-4 {
-  background: url(../assets/Screenshot\ from\ 2021-03-05\ 21-10-56.png)
+  background: url(../assets/Screenshot\ from\ 2021-03-05\ 21-10-56.jpg)
     no-repeat center center scroll;
   width: 1280px;
   height: 720px;
-  background-size: 1280px;
-  margin-left: -70px;
+  background-size: 1280px 720px;
 }
+.card-4 {
+  position: absolute;
+  width: 642px;
+  height: 518px;
+  left: 319px;
+  top: 3070px;
+
+  background: #ffffff;
+  border-radius: 10px;
+}
+
 .checkout {
   position: relative;
   background-color: #b90808;
@@ -349,5 +359,30 @@ li {
   font-weight: bold;
   font-size: 15px;
   color: #ffffff;
-  margin-left: 25%;
+  margin-left: 30%;
+  margin-top: 15%;
+}
+
+.location {
+  position: relative;
+  margin-right: 50%;
+  margin-left: 35%;
+  margin-top: 30%;
+  width: 30%;
+}
+.title-3 {
+  position: absolute;
+  width: 446px;
+  height: 102px;
+  left: 257px;
+  top: 202px;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 45px;
+  text-align: center;
+  color: #272827;
+  margin-left: -24%;
+  margin-top: -10%;
 }
