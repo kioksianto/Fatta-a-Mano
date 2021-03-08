@@ -145,3 +145,142 @@
 
   color: #000000;
 }
+/*Order*/
+.container-3 {
+  width: 1280px;
+  height: 720px;
+  margin-top: 20px;
+}
+.imagebackground-3 {
+  background: url(../assets/Establishment.jpg) no-repeat center center scroll;
+  width: 1280px;
+  height: 720px;
+  background-size: 1280px;
+}
+.card-1 {
+  position: absolute;
+  width: 288px;
+  height: 428px;
+  left: 126px;
+  top: 1650px;
+
+  background: #ffffff;
+  opacity: 0.75;
+  border-radius: 10px;
+}
+.card-2 {
+  position: absolute;
+  width: 288px;
+  height: 428px;
+  left: 486px;
+  top: 1650px;
+
+  background: #ffffff;
+  opacity: 0.75;
+  border-radius: 10px;
+}
+
+.card-3 {
+  position: absolute;
+  width: 288px;
+  height: 428px;
+  left: 846px;
+  top: 1650px;
+
+  background: #ffffff;
+  opacity: 0.75;
+  border-radius: 10px;
+}
+.title-2 {
+  position: relative;
+  width: 399px;
+  height: 175px;
+  left: 431px;
+  top: 1px;
+  font-family: Permanent Marker;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 120px;
+  line-height: 175px;
+  color: #e5e5e5;
+}
+li {
+  list-style: none;
+}
+.button-1,
+.button-2,
+.button-3 {
+  position: relative;
+  background-color: #b90808;
+  border: none;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 50px;
+  box-shadow: 3px 3px 8px 0 #000;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 15px;
+  color: #ffffff;
+}
+.card-1,
+.card-2,
+.card-3 {
+  display: flex;
+  flex-direction: column;
+}
+.button-1,
+.desc-1,
+.list-1,
+.quantity-1,
+.button-2,
+.desc-2,
+.list-2,
+.quantity-2,
+.desc-3,
+.list-3,
+.quantity-3 {
+  margin-top: 35px;
+  margin-left: 35px;
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+}
+.desc-1,
+.quantity-1,
+.desc-2,
+.quantity-2,
+.desc-3,
+.quantity-3 {
+  font-weight: bold;
+}
+.button-3 {
+  margin-left: 90px;
+  margin-top: 35px;
+}
+.submit {
+  position: relative;
+  background-color: #b90808;
+  border: none;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 50px;
+  box-shadow: 3px 3px 8px 0 #000;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 15px;
+  color: #ffffff;
+  margin-left: 43.5%;
+  margin-top: 35%;
+}
+.desc-4 {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  padding: 5px;
+  color: white;
+}
