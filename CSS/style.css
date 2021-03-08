@@ -320,10 +320,19 @@ li {
   width: 50%;
 }
 /*Location*/
-.container-4 {
+.container-5 {
   width: 1280px;
   height: 720px;
   margin-top: 20px;
+  
+}
+.imagebackground-4 {
+  background: url(../assets/Screenshot\ from\ 2021-03-05\ 21-10-56.png)
+    no-repeat center center scroll;
+  width: 1280px;
+  height: 720px;
+  background-size: 1280px;
+  margin-left: -70px;
 }
 .checkout {
   position: relative;
