@@ -45,7 +45,6 @@
   letter-spacing: 0em;
   text-align: left;
   font-family: "Poppins", sans-serif;
- 
 }
 .nav-link-wrapper {
   height: 22px;
@@ -90,5 +89,59 @@
   position: relative;
   top: -213px;
   right: -300px;
+}
+/*story*/
+.container-2 {
+  margin-top: 20px;
+  width: 1280px;
+  height: 720px;
+  background: #ffffff;
   overflow: hidden;
+  position: relative;
+}
+.imagebackground-2 {
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 30px;
+  margin-top: 20px;
+  padding: 30px;
+  background: url(../assets/pizza-white.jpg) no-repeat center center scroll;
+  clip-path: circle();
+  background-size: 1280px;
+  height: 1000px;
+  width: 1400px;
+  position: relative;
+  top: -213px;
+  right: 450px;
+}
+.title {
+  position: absolute;
+  width: 549px;
+  height: 175px;
+  left: 850px;
+  top: 0px;
+
+  font-family: Permanent Marker;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 120px;
+  line-height: 175px;
+  color: #b90808;
+}
+.description {
+  position: absolute;
+  width: 452px;
+  height: 334px;
+  left: 728px;
+  top: 286px;
+
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 36px;
+  text-align: right;
+
+  color: #000000;
 }
