@@ -17,14 +17,12 @@ Add changes made
 Commit your changes (git commit -am 'Improve feature')
 Push to the branch (git push origin improve-feature)
 Create a Pull Request
-Ready to order a scrumptious pizza?
-Here's what you need to do:
 
 
 This project is written in HTML5, CSS, Bootstrap and JavaScript.
 
 Support and contact details
-Should you be unable to access my web application, have any recommendations or questions, feel free to email me; brenda.sianto@gamil.com.
+Should you be unable to access my web application, have any recommendations or questions, feel free to email me; brenda.sianto@gmail.com.
 
 License
 opyright <2021> <Kiok Sianto>
