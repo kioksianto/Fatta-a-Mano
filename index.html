@@ -64,212 +64,121 @@
           </p>
         </div>
       </div>
-      <!-- order -->
-      <div class="container-3">
+
+      <!---order--->
+      <div id="ordersection">
         <div class="imagebackground-3">
           <div class="title-2">Choose</div>
-          <div class="card-1">
-            <div class="buttoncontainer-1">
-              <button class="button-1">LARGER THAN LIFE</button>
+          <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-6">
+              <div class="card">
+                <form id="orders">
+                  <div class="form-group">
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="name"
+                      placeholder="Name..."
+                      pattern="[a-zA-Z ]+"
+                      required
+                    />
+                  </div>
+                  <h5>Kindly pick the following:</h5>
+                  <div class="form-group">
+                    <label for="pizza-flavor">Pizza flavor</label>
+                    <select class="form-control" id="pizza-flavor" required>
+                      <option>Hawaiian</option>
+                      <option>Margharita</option>
+                      <option>Marinara</option>
+                      <option>Mushroom</option>
+                      <option>Veggie</option>
+                      <option>Oyster</option>
+                      <option>Pepperoni</option>
+                      <option>Pulled Pork</option>
+                      <option>Spicy Veggie</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="pizza-size">Pizza size</label>
+                    <select class="form-control" id="pizza-size" required>
+                      <option>Larger than life</option>
+                      <option>Not too big</option>
+                      <option>A bite</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="pizza-crust">Pizza Crust</label>
+                    <select class="form-control" id="pizza-crust" required>
+                      <option>Gluten Free</option>
+                      <option>Stuffed</option>
+                      <option>Crusty</option>
+                      <option>None</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="pizza-number">Number of Pizzas</label>
+                    <select class="form-control" id="pizza-number" required>
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                      <option>5</option>
+                    </select>
+                  </div>
+                  <button
+                    type="button"
+                    name="submitButton"
+                    class="submit"
+                    id="placeorder"
+                  >
+                    Place Order
+                  </button>
+                </form>
+              </div>
             </div>
-            <div class="crustoptions-1">
-              <p class="desc-1">Choose your crust</p>
-              <ul class="list-1">
-                <li>
-                  <input
-                    type="radio"
-                    class="crustoption"
-                    name="crusty"
-                    id="crusty"
-                  />&nbsp; Crusty
-                </li>
-                <li>
-                  <input
-                    type="radio"
-                    class="crustoption"
-                    name="stuffed"
-                    id="stuffed"
-                  />&nbsp; Stuffed
-                </li>
-                <li>
-                  <input
-                    type="radio"
-                    class="crustoption"
-                    name="glutenfree"
-                    id="glutenfree"
-                  />&nbsp; Glutenfree
-                </li>
-                <li>
-                  <input
-                    type="radio"
-                    class="crustoption"
-                    name="none"
-                    id="none"
-                  />&nbsp; None
-                </li>
-              </ul>
-            </div>
-            <div class="quantity-1">
-              <label for="quantity">Quantity (between 1 and 5):</label>
-              <input
-                type="number"
-                id="quantity"
-                name="quantity"
-                min="1"
-                max="5"
-              />
-            </div>
-          </div>
-          <div class="card-2">
-            <div class="buttoncontainer-2">
-              <button class="button-2">NOT TOO HUNGRY</button>
-            </div>
-            <div class="crustoptions-2">
-              <p class="desc-2">Choose your crust</p>
-              <ul class="list-2">
-                <li>
-                  <input
-                    type="radio"
-                    class="crustoption"
-                    name="crusty"
-                    id="crusty"
-                  />&nbsp; Crusty
-                </li>
-                <li>
-                  <input
-                    type="radio"
-                    class="crustoption"
-                    name="stuffed"
-                    id="stuffed"
-                  />&nbsp; Stuffed
-                </li>
-                <li>
-                  <input
-                    type="radio"
-                    class="crustoption"
-                    name="glutenfree"
-                    id="glutenfree"
-                  />&nbsp; Glutenfree
-                </li>
-                <li>
-                  <input
-                    type="radio"
-                    class="crustoption"
-                    name="none"
-                    id="none"
-                  />&nbsp; None
-                </li>
-              </ul>
-            </div>
-            <div class="quantity-2">
-              <label for="quantity">Quantity (between 1 and 5):</label>
-              <input
-                type="number"
-                id="quantity"
-                name="quantity"
-                min="1"
-                max="5"
-              />
-            </div>
-          </div>
-          <div class="card-3">
-            <div class="buttoncontainer-3">
-              <button class="button-3">A BITE</button>
-            </div>
-            <div class="crustoptions-3">
-              <p class="desc-3">Choose your crust</p>
-              <ul class="list-3">
-                <li>
-                  <input
-                    type="radio"
-                    class="crustoption"
-                    name="crusty"
-                    id="crusty"
-                  />&nbsp; Crusty
-                </li>
-                <li>
-                  <input
-                    type="radio"
-                    class="crustoption"
-                    name="stuffed"
-                    id="stuffed"
-                  />&nbsp; Stuffed
-                </li>
-                <li>
-                  <input
-                    type="radio"
-                    class="crustoption"
-                    name="glutenfree"
-                    id="glutenfree"
-                  />&nbsp; Glutenfree
-                </li>
-                <li>
-                  <input
-                    type="radio"
-                    class="crustoption"
-                    name="none"
-                    id="none"
-                  />&nbsp; None
-                </li>
-              </ul>
-            </div>
-            <div class="quantity-3">
-              <label for="quantity">Quantity (between 1 and 5):</label>
-              <input
-                type="number"
-                id="quantity"
-                name="quantity"
-                min="1"
-                max="5"
-              />
-            </div>
-          </div>
-          <div class="buttoncontainer-4">
-            <button type="submit" class="submit">SUBMIT</button>
-          </div>
-          <div class="desc-4">
-            *If you are picking more than two sizes in one order.e.g Not too
-            hungry and A bite, submit each option separately.*
+            <div class="col-md-3"></div>
           </div>
         </div>
       </div>
+
       <!-- delivery option -->
-      <div class="container-4">
+      <div class="container-4" id="deliveryoption">
         <div class="buttoncontainer-5">
-          <button type="submit" class="in-house">IN-HOUSE</button>
-          <button type="submit" class="delivery">DELIVERY</button>
+          <div class="card-1">
+            <button type="button" class="in-house" id="inhouse">
+              IN-HOUSE
+            </button>
+            <button type=" button" class="delivery" id="delivery">
+              DELIVERY
+            </button>
+          </div>
         </div>
       </div>
       <!-- location -->
-      <div class="container-5">
+      <div class="container-5" id="deliveryconfirmation">
         <div class="imagebackground-4">
           <div class="card-4">
-            <div class="title-3">Location</div>
+            <div class="title-3">LOCATION</div>
             <textarea
               class="location"
               rows="2"
-              id="comment"
+              id="location"
               placeholder="Your location...."
             ></textarea>
 
-            <button class="checkout" type="submit">PROCEED TO CHECK-OUT</button>
+            <button class="checkout" type="submit" id="checkout">
+              PROCEED TO CHECK-OUT
+            </button>
           </div>
         </div>
       </div>
-       <!-- l -->
-       <div class="container-6">
-        <div class="imagebackground-4">
-          <div class="card-4">
-            <div class="title-3">Location</div>
-            <textarea
-              class="location"
-              rows="2"
-              id="comment"
-              placeholder="Your location...."
-            ></textarea>
-
-            <button class="checkout" type="submit">PROCEED TO CHECK-OUT</button>
-          </div>
+      <!-- Check-out -->
+      <div class="container-6" id="price">
+        <div class="card-3">
+          <div class="title-4">TOTAL PRICE</div>
+          <div class="mpesa">Mpesa till number</div>
+          <div class="tillnumber">000000</div>
         </div>
       </div>
     </div>

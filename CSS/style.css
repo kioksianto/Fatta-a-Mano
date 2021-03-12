@@ -25,7 +25,7 @@
 .nav-bar > .left-side > div {
   margin-right: 20px;
   display: inline-block;
-  font-family: Marck Script;
+  font-family: "Marck Script", cursive;
   font-size: 35px;
   font-style: normal;
   font-weight: 400;
@@ -62,7 +62,7 @@
 }
 /*Home*/
 .tagline {
-  font-family: Permanent Marker;
+  font-family: "Permanent Marker", cursive;
   font-size: 120px;
   font-style: normal;
   font-weight: 400;
@@ -122,7 +122,7 @@
   left: 850px;
   top: 0px;
 
-  font-family: Permanent Marker;
+  font-family: "Permanent Marker", cursive;
   font-style: normal;
   font-weight: normal;
   font-size: 120px;
@@ -139,13 +139,13 @@
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: normal;
-  font-size: 24px;
+  font-size: 20px;
   line-height: 36px;
   text-align: right;
 
   color: #000000;
 }
-/*Order*/
+/*Order
 .container-3 {
   width: 1280px;
   height: 720px;
@@ -197,7 +197,7 @@
   height: 175px;
   left: 431px;
   top: 1px;
-  font-family: Permanent Marker;
+  font-family: "Permanent Marker", cursive;
   font-style: normal;
   font-weight: normal;
   font-size: 120px;
@@ -283,6 +283,158 @@ li {
   font-style: normal;
   padding: 5px;
   color: white;
+}*/
+
+/*order section*/
+.ordersection {
+  width: 1280px;
+  height: 720px;
+  margin-top: 20px;
+}
+.imagebackground-3 {
+  background: url(../assets/Establishment.jpg) no-repeat center center scroll;
+  width: 1280px;
+  height: 720px;
+  background-size: 1280px;
+}
+.title-2 {
+  position: relative;
+  width: 399px;
+  height: 175px;
+  left: 431px;
+  top: 1px;
+  font-family: "Permanent Marker", cursive;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 120px;
+  line-height: 175px;
+  color: #e5e5e5;
+}
+#ordersection {
+  text-align: center;
+}
+.card {
+  position: absolute;
+  width: 600px;
+  height: 500px;
+  left: 350px;
+  top: 1650px;
+
+  background: #ffffff;
+  opacity: 0.75;
+  border-radius: 10px;
+}
+form {
+  padding-left: 13%;
+  padding-right: 13%;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.form-control {
+  /*change color of inputs*/
+  color: rgb(17, 17, 17);
+}
+#pizza-flavor,
+#pizza-size,
+#pizza-crust,
+#pizza-number {
+  width: 50%;
+  margin-left: 25%;
+  border-radius: 3px;
+  box-shadow: 3px 3px 8px 0 #000;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 15px;
+  background: transparent;
+  color: #272827;
+  padding: 10px;
+}
+#name {
+  width: 50%;
+  margin-left: 0%;
+  margin-top: 30px;
+  border-radius: 3px;
+  box-shadow: 3px 3px 8px 0 #000;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 15px;
+  background-color: #b90808;
+  color: white;
+  background: transparent;
+  padding: 10px;
+}
+
+form label {
+  color: #b90808;
+  font-size: 15px;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+}
+select {
+  display: block;
+}
+.form-check {
+  padding: 0;
+}
+h5 {
+  /*styling for all h5 elements*/
+  color: #b90808;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.form-group small {
+  /*style small text in the form*/
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+
+.submit {
+  position: relative;
+  background-color: #b90808;
+  border: none;
+  padding: 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 50px;
+  box-shadow: 3px 3px 8px 0 #000;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 15px;
+  color: #ffffff;
+  margin-left: 25%;
+  margin-top: 6%;
+  width: 50%;
+}
+
+#yourorder {
+  text-align: center;
+  display: none;
+  padding-bottom: 5%;
+}
+table .table-sm th {
+  text-align: center;
+}
+#text {
+  padding-top: 7%;
+  padding-bottom: 5%;
+  padding-left: 0;
+  padding-right: 0;
+}
+#deliveryOptions {
+  display: none;
 }
 
 /*delivery option*/
@@ -291,6 +443,7 @@ li {
   height: 720px;
   background-color: #272827;
   margin-top: 20px;
+  display: none;
 }
 .in-house,
 .delivery {
@@ -308,16 +461,16 @@ li {
   font-weight: bold;
   font-size: 15px;
   color: #ffffff;
-  margin-left: 25%;
+  margin-left: 35%;
 }
 .in-house {
   margin-top: 20%;
-  width: 50%;
+  width: 30%;
 }
 
 .delivery {
   margin-top: 15%;
-  width: 50%;
+  width: 30%;
 }
 /*Location*/
 .container-5 {
@@ -325,6 +478,7 @@ li {
   height: 720px;
   margin-top: 20px;
   background: #272827;
+  display: none;
 }
 .imagebackground-4 {
   background: url(../assets/Screenshot\ from\ 2021-03-05\ 21-10-56.jpg)
@@ -343,9 +497,24 @@ li {
   background: #ffffff;
   border-radius: 10px;
 }
+.card-3 {
+  position: absolute;
+  width: 642px;
+  margin-left: 25%;
+  background: #ffffff;
+  border-radius: 10px;
+}
+.card-1 {
+  width: 642px;
+  height: 518px;
+  margin-left: 25%;
+
+  background: #ffffff;
+  border-radius: 10px;
+}
 
 .checkout {
-  position: relative;
+  position: absolute;
   background-color: #b90808;
   border: none;
   padding: 15px 32px;
@@ -360,18 +529,18 @@ li {
   font-size: 15px;
   color: #ffffff;
   margin-left: 30%;
-  margin-top: 15%;
+  margin-top: 40%;
 }
 
 .location {
-  position: relative;
+  position: absolute;
   margin-right: 50%;
   margin-left: 35%;
   margin-top: 30%;
   width: 30%;
 }
 .title-3 {
-  position: absolute;
+  position: relative;
   width: 446px;
   height: 102px;
   left: 257px;
@@ -383,6 +552,45 @@ li {
   line-height: 45px;
   text-align: center;
   color: #272827;
-  margin-left: -24%;
+  margin-left: -25%;
   margin-top: -10%;
+}
+/*checkout*/
+.container-6 {
+  display: none;
+  width: 1280px;
+  height: 720px;
+  margin-top: 150px;
+  background: #272827;
+}
+.title-4 {
+  position: relative;
+  width: 446px;
+  height: 102px;
+  left: 257px;
+  top: 202px;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 45px;
+  text-align: center;
+  color: #272827;
+  margin-left: -25%;
+  margin-top: -10%;
+}
+.mpesa {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  color: #b90808;
+  margin-top: 400px;
+}
+.tillnumber {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  color: #b90808;
+  margin-top: 50px;
 }
