@@ -8,16 +8,7 @@ function placeOrder() { //function for placing an order
 
   let sizeCost; 
   //set different prices for the different pizza flavors depending on their size
-  if (flavor === "Hawaiian" || flavor === "Margharita" || flavor === "Marinara" || flavor === "Mushroom" || flavor === "Veggie" 
-  || flavor === "Oyster"|| flavor === "Pepperoni" || flavor === "Pulled Pork"|| flavor === "Spicy Veggie") {
-      if (size === "Larger than life") {
-          sizeCost = 1050;
-      } else if (size === "Not too big") {
-          sizeCost = 850;
-      } else if (size === " A bite") {
-          sizeCost = 450;
-      }
-    }
+
     var crustCost; 
     //set prices for different crust types
     if (crust === "Gluten Free") {
