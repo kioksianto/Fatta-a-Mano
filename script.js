@@ -30,10 +30,6 @@ function placeOrder() { //function for placing an order
         crustCost = 180;
     } 
 
-    //price calculation
-    let price = (sizeCost + crustCost);
-    let totalPrice = parseInt(price * number);
-
    
     $('#deliveryoption','#deliveryconfirmation','#price').hide();
     (function(){
