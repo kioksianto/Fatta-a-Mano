@@ -41,23 +41,6 @@ function placeOrder() { //function for placing an order
         $('deliveryoption').show();
     });
 
-    $('#inhouse').click(function(){
-        $('#price').show();
-        $('deliveryoption').hide();
-
-    });
-
-    $('#delivery').click(function(){
-        $('#deliveryconfirmation').show();
-        $('deliveryoption').hide();
-        var location = capitalize_inputs($("input#location").val()); 
-        //get delivery details
-        $(".location").text(location);
-    });
-
-    $('#checkout').click(function(){
-        $('#price').show();
-        $('deliveryconfirmation').hide();
-    });
+   
 
 }
