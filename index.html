@@ -4,12 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title><Fatta-a-Mano></title>
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Marck+Script&display=swap"
-      rel="stylesheet"
-    />
+    <title>Fatta-a-Mano</title>
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Marck+Script&display=swap"
@@ -18,10 +13,22 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap"
-      rel="stylesheet"
-    />
+      rel="stylesheet"/>
+      <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
-    <link rel="stylesheet" href="./CSS/style.css" />
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="./script.js"></script>
+
+
+    <link rel="stylesheet" href="/CSS/style.css" />
   </head>
   <body>
     <!-- Home -->
@@ -79,6 +86,7 @@
                       type="text"
                       class="form-control"
                       id="name"
+                      value=""
                       placeholder="Name..."
                       pattern="[a-zA-Z ]+"
                       required
@@ -87,44 +95,45 @@
                   <h5>Kindly pick the following:</h5>
                   <div class="form-group">
                     <label for="pizza-flavor">Pizza flavor</label>
-                    <select class="form-control" id="pizza-flavor" required>
-                      <option>Hawaiian</option>
-                      <option>Margharita</option>
-                      <option>Marinara</option>
-                      <option>Mushroom</option>
-                      <option>Veggie</option>
-                      <option>Oyster</option>
-                      <option>Pepperoni</option>
-                      <option>Pulled Pork</option>
-                      <option>Spicy Veggie</option>
+                    <select class="form-control" id="pizza-flavour" required>
+                      <option value="Hawaiian">Hawaiian</option>
+                      <option value="Margharita">Margharita</option>
+                      <option value="Marinara">Marinara</option>
+                      <option value="Mushroom">Mushroom</option>
+                      <option value="Veggie">Veggie</option>
+                      <option value="Oyster">Oyster</option>
+                      <option value="Pepperoni">Pepperoni</option>
+                      <option value="Pulled Pork">Pulled Pork</option>
+                      <option value="Spicy Veggie">Spicy Veggie</option>
                     </select>
                   </div>
                   <div class="form-group">
                     <label for="pizza-size">Pizza size</label>
                     <select class="form-control" id="pizza-size" required>
-                      <option>Larger than life</option>
-                      <option>Not too big</option>
-                      <option>A bite</option>
+                      <option value="larger-than-life">Larger than life</option>
+                      <option value="not-too-Big">Not too big</option>
+                      <option value="a-bite">A bite</option>
                     </select>
                   </div>
                   <div class="form-group">
                     <label for="pizza-crust">Pizza Crust</label>
-                    <select class="form-control" id="pizza-crust" required>
-                      <option>Gluten Free</option>
-                      <option>Stuffed</option>
-                      <option>Crusty</option>
-                      <option>None</option>
+                    <select class="form-control" id="pizza-crust">
+                      <option value="gluten-free">Gluten Free</option>
+                      <option value="stuffed">Stuffed</option>
+                      <option value="crusty">Crusty</option>
                     </select>
                   </div>
                   <div class="form-group">
-                    <label for="pizza-number">Number of Pizzas</label>
-                    <select class="form-control" id="pizza-number" required>
-                      <option>1</option>
-                      <option>2</option>
-                      <option>3</option>
-                      <option>4</option>
-                      <option>5</option>
+                    <label for="pizza-topping">Pizza Topping</label>
+                    <select class="form-control" id="pizza-topping">
+                      <option value="bacon">Bacon</option>
+                      <option value="mushroom">Mushroom</option>
+                      <option value="spinach">Spinach</option>
                     </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="pizza-number" class="">Number of Pizzas</label>
+                    <input type="number" value="" id="quantity">
                   </div>
                   <button
                     type="submit"
@@ -147,6 +156,32 @@
       <div class="container-4" id="deliveryoption">
         <div class="buttoncontainer-5">
           <div class="card-1">
+            <div class="table table-hover" id="cart-items">
+              <table class="col-md-12">
+                <thread>
+                  <tr>
+                    <th>Name</th>
+                    <th>Flavour</th>
+                    <th>Size</th>
+                    <th>Toppings</th>
+                    <th>Crust</th>
+                    <th>Quantity</th>
+                    <th>Price</th>
+                  </tr>
+                </thread>
+                <tbody id="cart-items">   
+                  <!-- <tr>
+                    <td id="customer-name"></td>
+                    <td id="pizza-flavour"></td>
+                    <td id="Pizza-size"></td>
+                    <td id="pizza-topping"></td>
+                    <td id="pizza-crust"></td>
+                    <td id="pizza-quantity"></td>
+                    <td id="pizza-price"></td>
+                  </tr> -->
+                </tdata>
+              </table>
+            </div>
             <button type="button" class="in-house" id="inhouse">
               IN-HOUSE
             </button>
@@ -183,6 +218,6 @@
         </div>
       </div>
     </div>
-    <script src="./script.js"></script>
+    
   </body>
 </html>
