@@ -11,6 +11,7 @@ html,body{
 .container-1 {
   width: 1280px;
   height: 720px;
+  max-height: 720px;
   background: #272827;
   overflow: hidden;
   position: relative;
@@ -123,7 +124,7 @@ html,body{
   position: absolute;
   width: 549px;
   height: 175px;
-  left: 850px;
+  left: 750px;
   top: 0px;
 
   font-family: "Permanent Marker", cursive;
@@ -137,7 +138,7 @@ html,body{
   position: absolute;
   width: 452px;
   height: 334px;
-  left: 728px;
+  left: 600px;
   top: 286px;
 
   font-family: "Poppins", sans-serif;
@@ -154,7 +155,6 @@ html,body{
 .ordersection {
   width: 1280px;
   height: 720px;
-  margin-top: 20px;
 }
 .imagebackground-3 {
   background: url(../assets/Establishment.jpg) no-repeat center center scroll;
@@ -186,7 +186,11 @@ html,body{
   background: #ffffff;
   opacity: 0.75;
   border-radius: 10px;
+<<<<<<< HEAD
   padding: 30px;
+=======
+  padding: 20px;
+>>>>>>> 9681386f4004238f2aa8cdad4dba65979e17045c
 }
 form {
   padding-left: 13%;
@@ -203,8 +207,11 @@ form {
   /*change color of inputs*/
   color: rgb(17, 17, 17);
 }
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> 9681386f4004238f2aa8cdad4dba65979e17045c
 
 form label {
   color: #b90808;
@@ -261,6 +268,8 @@ h5 {
 }
 table .table-sm th {
   text-align: center;
+  margin-top: 20%;
+  position: relative;
 }
 #text {
   padding-top: 7%;
@@ -288,6 +297,16 @@ table .table-sm th {
   margin-top: 20px;
   display: none;
 }
+.card-1 {
+  width: 642px;
+  height: 518px;
+  margin-left: 25%;
+  margin-top: 30px;
+
+  background: #272827;
+  border-radius: 10px;
+}
+
 .in-house,
 .delivery {
   position: relative;
@@ -322,7 +341,7 @@ table .table-sm th {
   width: 1280px;
   height: 720px;
   margin-top: 20px;
-  background: #272827;
+  background: #ffffff;
   display: none;
 }
 .imagebackground-4 {
@@ -352,6 +371,7 @@ table .table-sm th {
   margin-top: 5%;
 
 }
+<<<<<<< HEAD
 .card-1 {
   width: 642px;
   height: 518px;
@@ -364,6 +384,9 @@ table .table-sm th {
 #addedprice{
   color: #ffffff;
 }
+=======
+
+>>>>>>> 9681386f4004238f2aa8cdad4dba65979e17045c
 .checkout {
   position: relative;
   background-color: #b90808;
