@@ -3,7 +3,11 @@
   font-family: "Permanent Marker", cursive;
   font-family: "Marck Script", cursive;
 */
-
+html,body{
+  margin-left: -5%;
+  margin-right: 2%;
+  
+}
 .container-1 {
   width: 1280px;
   height: 720px;
@@ -145,145 +149,6 @@
 
   color: #000000;
 }
-/*Order
-.container-3 {
-  width: 1280px;
-  height: 720px;
-  margin-top: 20px;
-}
-.imagebackground-3 {
-  background: url(../assets/Establishment.jpg) no-repeat center center scroll;
-  width: 1280px;
-  height: 720px;
-  background-size: 1280px;
-}
-.card-1 {
-  position: absolute;
-  width: 288px;
-  height: 428px;
-  left: 126px;
-  top: 1650px;
-
-  background: #ffffff;
-  opacity: 0.75;
-  border-radius: 10px;
-}
-.card-2 {
-  position: absolute;
-  width: 288px;
-  height: 428px;
-  left: 486px;
-  top: 1650px;
-
-  background: #ffffff;
-  opacity: 0.75;
-  border-radius: 10px;
-}
-
-.card-3 {
-  position: absolute;
-  width: 288px;
-  height: 428px;
-  left: 846px;
-  top: 1650px;
-
-  background: #ffffff;
-  opacity: 0.75;
-  border-radius: 10px;
-}
-.title-2 {
-  position: relative;
-  width: 399px;
-  height: 175px;
-  left: 431px;
-  top: 1px;
-  font-family: "Permanent Marker", cursive;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 120px;
-  line-height: 175px;
-  color: #e5e5e5;
-}
-li {
-  list-style: none;
-}
-.button-1,
-.button-2,
-.button-3 {
-  position: relative;
-  background-color: #b90808;
-  border: none;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  border-radius: 50px;
-  box-shadow: 3px 3px 8px 0 #000;
-  font-family: "Poppins", sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 15px;
-  color: #ffffff;
-}
-.card-1,
-.card-2,
-.card-3 {
-  display: flex;
-  flex-direction: column;
-}
-.button-1,
-.desc-1,
-.list-1,
-.quantity-1,
-.button-2,
-.desc-2,
-.list-2,
-.quantity-2,
-.desc-3,
-.list-3,
-.quantity-3 {
-  margin-top: 35px;
-  margin-left: 35px;
-  font-family: "Poppins", sans-serif;
-  font-size: 15px;
-}
-.desc-1,
-.quantity-1,
-.desc-2,
-.quantity-2,
-.desc-3,
-.quantity-3 {
-  font-weight: bold;
-}
-.button-3 {
-  margin-left: 90px;
-  margin-top: 35px;
-}
-.submit {
-  position: relative;
-  background-color: #b90808;
-  border: none;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  border-radius: 50px;
-  box-shadow: 3px 3px 8px 0 #000;
-  font-family: "Poppins", sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 15px;
-  color: #ffffff;
-  margin-left: 43.5%;
-  margin-top: 35%;
-}
-.desc-4 {
-  text-align: center;
-  font-family: "Poppins", sans-serif;
-  font-style: normal;
-  padding: 5px;
-  color: white;
-}*/
 
 /*order section*/
 .ordersection {
@@ -294,8 +159,9 @@ li {
 .imagebackground-3 {
   background: url(../assets/Establishment.jpg) no-repeat center center scroll;
   width: 1280px;
-  height: 720px;
+  height: 820px;
   background-size: 1280px;
+  margin-top: 20px;
 }
 .title-2 {
   position: relative;
@@ -316,13 +182,11 @@ li {
 .card {
   position: absolute;
   width: 600px;
-  height: 500px;
-  left: 350px;
-  top: 1650px;
-
+  height: 600px;
   background: #ffffff;
   opacity: 0.75;
   border-radius: 10px;
+  padding: 30px;
 }
 form {
   padding-left: 13%;
@@ -339,37 +203,8 @@ form {
   /*change color of inputs*/
   color: rgb(17, 17, 17);
 }
-#pizza-flavor,
-#pizza-size,
-#pizza-crust,
-#pizza-number {
-  width: 50%;
-  margin-left: 25%;
-  border-radius: 3px;
-  box-shadow: 3px 3px 8px 0 #000;
-  font-family: "Poppins", sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 15px;
-  background: transparent;
-  color: #272827;
-  padding: 10px;
-}
-#name {
-  width: 50%;
-  margin-left: 0%;
-  margin-top: 30px;
-  border-radius: 3px;
-  box-shadow: 3px 3px 8px 0 #000;
-  font-family: "Poppins", sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 15px;
-  background-color: #b90808;
-  color: white;
-  background: transparent;
-  padding: 10px;
-}
+
+
 
 form label {
   color: #b90808;
@@ -414,7 +249,7 @@ h5 {
   font-weight: bold;
   font-size: 15px;
   color: #ffffff;
-  margin-left: 25%;
+  margin-left: 13%;
   margin-top: 6%;
   width: 50%;
 }
@@ -436,12 +271,20 @@ table .table-sm th {
 #deliveryOptions {
   display: none;
 }
+#cart-items{
+  color:white;
+  margin-left: 5%;
+  text-align: center;
+  
+
+
+}
 
 /*delivery option*/
 .container-4 {
   width: 1280px;
   height: 720px;
-  background-color: #272827;
+  background-color: white;
   margin-top: 20px;
   display: none;
 }
@@ -466,11 +309,13 @@ table .table-sm th {
 .in-house {
   margin-top: 20%;
   width: 30%;
+  margin-left: 3%;
 }
 
 .delivery {
   margin-top: 15%;
   width: 30%;
+  margin-left: 5%;
 }
 /*Location*/
 .container-5 {
@@ -490,9 +335,9 @@ table .table-sm th {
 .card-4 {
   position: absolute;
   width: 642px;
+  margin-left: 25%;
   height: 518px;
-  left: 319px;
-  top: 3070px;
+  margin-top: 10%;
 
   background: #ffffff;
   border-radius: 10px;
@@ -500,21 +345,27 @@ table .table-sm th {
 .card-3 {
   position: absolute;
   width: 642px;
+  height: 500px;
   margin-left: 25%;
-  background: #ffffff;
+  background: #272827;
   border-radius: 10px;
+  margin-top: 5%;
+
 }
 .card-1 {
   width: 642px;
   height: 518px;
   margin-left: 25%;
+ padding-top: 30px;
 
-  background: #ffffff;
+  background: #272827;
   border-radius: 10px;
 }
-
+#addedprice{
+  color: #ffffff;
+}
 .checkout {
-  position: absolute;
+  position: relative;
   background-color: #b90808;
   border: none;
   padding: 15px 32px;
@@ -528,12 +379,11 @@ table .table-sm th {
   font-weight: bold;
   font-size: 15px;
   color: #ffffff;
-  margin-left: 30%;
-  margin-top: 40%;
+  margin: 10px;
 }
 
 .location {
-  position: absolute;
+  position: relative;
   margin-right: 50%;
   margin-left: 35%;
   margin-top: 30%;
@@ -560,8 +410,8 @@ table .table-sm th {
   display: none;
   width: 1280px;
   height: 720px;
-  margin-top: 150px;
-  background: #272827;
+  background: #ffffff;
+  margin-top: 20px;
 }
 .title-4 {
   position: relative;
@@ -580,17 +430,25 @@ table .table-sm th {
   margin-top: -10%;
 }
 .mpesa {
+  position: absolute;
   text-align: center;
   font-family: "Poppins", sans-serif;
   font-style: normal;
-  color: #b90808;
-  margin-top: 400px;
+  font-size: larger;
+  font-weight: bold;
+  color: #fff;
+  margin-top: 40%;
+  margin-left: 37%;
+
 }
 .tillnumber {
+  position: absolute;
   text-align: center;
   font-family: "Poppins", sans-serif;
-  font-style: normal;
+  font-style:normal;
+  font-size: larger;
   font-weight: bold;
-  color: #b90808;
-  margin-top: 50px;
+  color: #fff;
+  margin-top: 45%;
+  margin-left: 45%;
 }
