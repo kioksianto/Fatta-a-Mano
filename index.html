@@ -28,7 +28,7 @@
     <script src="./script.js"></script>
 
 
-    <link rel="stylesheet" href="/CSS/style.css" />
+    <link rel="stylesheet" href="./CSS/style.css" />
   </head>
   <body>
     <!-- Home -->
@@ -124,7 +124,7 @@
                       
                     </select>
                     <div class="form-group">
-                      <label for="Pizza-toppings">Pizza Toppings</label>
+                      <label for="Pizza-toppings">Pizza Topping</label>
                       <select class="form-control" id="toppings" required>
                         <option value="Bacon">Bacon</option>
                         <option value="Mushroom">Mushroom</option>
@@ -134,9 +134,11 @@
                   </div>
                   <div class="form-group">
                     <label for="pizza-number">Number of Pizza</label>
-                    <input type="number" value="" id="quantity">
+                    <input type="number" min="1" value="1" id="quantity" autocomplete="off" required>
                   </div>
-
+				  
+				  <input type="hidden" value='0' id="total_price_input" autocomplete="off"> <!-- to store the total price as the user makes the orders -->
+				  
                   <button
                     type="submit"
                     onclick="PizzaOrder"
@@ -185,7 +187,9 @@
               </table>
             </div>
             <br><br><br>
-            <p id="addedprice">Delivery will cost sh. 250</p>
+            <p class="addedprice">Delivery will cost sh. 250</p>
+			<p class="addedprice">Total Pizza Cost: sh. <span id="total_pizza_cost"> </span> </p>
+			<p class="addedprice">Overall Cost: sh. <span id="overall_total_cost"> </span> </p>
             <button type="button" class="in-house" id="inhouse">
               IN-HOUSE
             </button>
@@ -205,6 +209,7 @@
               rows="2"
               id="location"
               placeholder="Your location...."
+			  required
             ></textarea>
 
             <button class="checkout" type="submit" id="checkout">
@@ -216,7 +221,10 @@
       <!-- Check-out -->
       <div class="container-6" id="price">
         <div class="card-3">
-          <div class="title-4">TOTAL PRICE</div>
+          <div class="total_price_txt">Overall Cost</div>
+		  <div class="total_price_val"> <p id="checkout_overall_cost"></p></div>
+		  <div class="location_txt">Delivery Location</div>
+		  <div class="location_val"> <p id="delivery_location"></p></div>
           <div class="mpesa">Mpesa till number</div>
           <div class="tillnumber">000000</div>
         </div>
