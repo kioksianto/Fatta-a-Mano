@@ -186,11 +186,7 @@ html,body{
   background: #ffffff;
   opacity: 0.75;
   border-radius: 10px;
-<<<<<<< HEAD
   padding: 30px;
-=======
-  padding: 20px;
->>>>>>> 9681386f4004238f2aa8cdad4dba65979e17045c
 }
 form {
   padding-left: 13%;
@@ -207,11 +203,8 @@ form {
   /*change color of inputs*/
   color: rgb(17, 17, 17);
 }
-<<<<<<< HEAD
 
 
-=======
->>>>>>> 9681386f4004238f2aa8cdad4dba65979e17045c
 
 form label {
   color: #b90808;
@@ -371,7 +364,6 @@ table .table-sm th {
   margin-top: 5%;
 
 }
-<<<<<<< HEAD
 .card-1 {
   width: 642px;
   height: 518px;
@@ -384,9 +376,6 @@ table .table-sm th {
 #addedprice{
   color: #ffffff;
 }
-=======
-
->>>>>>> 9681386f4004238f2aa8cdad4dba65979e17045c
 .checkout {
   position: relative;
   background-color: #b90808;
